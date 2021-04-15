@@ -19,4 +19,12 @@ public class SingleLinkedList<T> {
     return (head == null);
   }
 
+  public void insertAtHead(T data) {
+    Node newNode = new Node();
+    newNode.data = data;
+    newNode.nextNode = this.head;
+    this.head = newNode;
+    size++;
+  }
+
 }
